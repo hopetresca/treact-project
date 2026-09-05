@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 2px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 160px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+li {
+     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.purple {
+    color: #483190;
+}
+
+
+
+/* 
+
+NAVIGATION 
+
+*/
+
+.nav__row {
+    width: 100%;
+    max-width: 1200px;
+     display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav__links {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.nav__link {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.nav__link--login {
+    margin-left: 75px;
+}
+
+.nav__link--primary {
+    margin-left: 27vw;
+}
+
+.nav__link--btn {
+    display: flex;
+}
+
+.nav__logo {
+    width: 160px;
+    margin-right: 60px;
+}
+
+.nav__link a,
+.nav__link--login a,
+.nav__link--btn,
+.nav__link--btn a {
+    white-space: nowrap;
+}
+
+.nav__link--btn {
+    padding: 3px 35px;
+    background-color: #483190;
+    border-radius: 20px;
+}
+
+.nav__link--btn,
+.nav__link--btn a {
+    color: white;
+}
+
+/*
+
+HEADER
+
+*/
+
+.header__row {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.header__title {
+    padding-bottom: 25px;
+}
+
+.header__para {
+    padding: 25px 45px;
+}
+
+form {
+    position: relative;
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+    height: 50px;
+    padding: 0 100px 0 20px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #483190;
+    color: white;
+    cursor: pointer;
+}
+
+.header__companies--logo {
+    height: 40px;
+    width: 80px;
+    filter: grayscale(100%);
+}
+
+.header__companies {
+    font-size: 10px;
+}
+
+.header__description {
+    width: 40%;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.header__logo {
+    width: 60%;
+    height: 350px;
+    display: flex;
+    padding: 20px
+}
+
+/*
+
+FEATURES
+
+*/
+
+
+/*
+
+    SIDENOTE
+
+Fontawesome didn't have the lightning bolt shield icon or the user heart icon so I chose something similar to the topic
+
+*/
+
+#features  
+.services {
+    width: 100%;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+.features__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.features__h2 {
+    font-size: 15px;
+}
+
+.features__para {
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+
+#features .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    width: 100%;
+}
+
+#features .service-item {
+    display: flex;
+    align-items: center;
+    flex: 0 0 calc((100% - 40px) / 3);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.service {
+    flex: 1;
+}
+
+.service p {
+    font-size: 10px;
+    max-width: 180px;
+    line-height: 1.4;
+}
