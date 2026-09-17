@@ -178,6 +178,12 @@ NAVIGATION
   display: none;
 }
 
+.menu a {
+  font-size: 24px;
+  color: #243e63;
+  text-decoration: none;
+}
+
 .menu--open .menu {
   display: flex;
   flex-direction: column;
@@ -193,8 +199,22 @@ NAVIGATION
   z-index: 100;
 }
 
+.menu button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
 .btn__menu {
   display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 /*
@@ -909,11 +929,11 @@ PRICING
 }
 
 .plan:nth-child(1) .plan__header::before {
-    background: linear-gradient(to right, #33fedc, #99fdeb);
+    background: linear-gradient(to right, #33fedc, #81e6d9);
 }
 
 .plan:nth-child(1) .plan__btn {
-    background: linear-gradient(to right, #33fedc, #99fdeb);
+    background: linear-gradient(to right, #33fedc, #81e6d9);
     color: #fff;
     border: none;
 }
@@ -923,11 +943,11 @@ PRICING
 }
 
 .plan:nth-child(3) .plan__header::before {
-    background: linear-gradient(to right, #ff3333, #ff6666);
+    background: linear-gradient(to right, #f56565, #feb2b2);
 }
 
 .plan:nth-child(3) .plan__btn {
-    background: linear-gradient(to right, #ff3333, #ff6666);
+    background: linear-gradient(to right, #f56565, #feb2b2);
     color: #fff;
     border: none;
 }
@@ -944,7 +964,7 @@ PRICING
 .plan:nth-child(2) .plan__header,
 .plan:nth-child(2) .plan__features,
 .plan:nth-child(2) .plan__action {
-    background: linear-gradient(to right, #0044cc, #3376fe);
+    background: linear-gradient(to right, #4c51bf, #667eea);
     color: white;
     border-color: #483190;
 }
@@ -957,7 +977,7 @@ PRICING
 
 .plan:nth-child(2) .plan__btn {
     background-color: white;
-    color: #0044cc;
+    color: #6415ff;
     border: none;
     cursor: pointer;
 }
@@ -1166,7 +1186,7 @@ LAST MESSAGE
 }
 
 .last-message__btn--1 {
-    background-color: #f26b4d;
+    background-color: #f56565;
     color: #fff;
 }
 
@@ -1476,7 +1496,12 @@ FOOTER
 
 
 @media (max-width: 768px) {
-  .btn__menu {
+    .nav__row {
+    justify-content: space-between;
+    padding-left: 20px;
+}
+  
+    .btn__menu {
     display: block;
   }
 
