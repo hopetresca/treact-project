@@ -52,7 +52,7 @@ a:hover {
 }
 
 .purple {
-    color: #483190;
+    color: #6415ff;
 }
 
 
@@ -118,7 +118,7 @@ NAVIGATION
 .nav__link--primary a:hover,
 .nav__link a:hover,
 .nav__link--login a:hover {
-    color: #483190;
+    color: #6415ff;
 }
 
 .nav__link {
@@ -165,13 +165,36 @@ NAVIGATION
     display: flex;
     padding: 10px 30px;
     font-size: 16px;
-    background-color: #483190;
+    background-color: #6415ff;
     border-radius: 20px;
 }
 
 .nav__link--btn,
 .nav__link--btn a {
     color: white;
+}
+
+.menu {
+  display: none;
+}
+
+.menu--open .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+}
+
+.btn__menu {
+  display: none;
 }
 
 /*
@@ -240,7 +263,7 @@ form input[type="submit"] {
     padding: 0 40px;
     border: none;
     border-radius: 30px;
-    background-color: #483190;
+    background-color: #6415ff;
     color: white;
     cursor: pointer;
     font-size: 15px;
@@ -385,7 +408,7 @@ Fontawesome didn't have the lightning bolt shield icon or the user heart icon so
     flex-shrink: 0;
     margin-right: 15px;
     font-size: 30px;
-    color: #483190;
+    color: #6415ff;
     border: 1px solid #8e8e8e;
     border-radius: 75%;
     padding: 10px;
@@ -1449,6 +1472,13 @@ FOOTER
         width: 50%;
         margin-bottom: 25px;
     }
+}
+
+
+@media (max-width: 768px) {
+  .btn__menu {
+    display: block;
+  }
 }
 
 
