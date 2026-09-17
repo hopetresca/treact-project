@@ -13,36 +13,31 @@
         <nav>
             <div class="nav__container">
                 <div class="row nav__row">
-                <img class="nav__logo" src="assets/treact_logo.webp" alt="Logo">
+                    <img class="nav__logo" src="assets/treact_logo.webp" alt="Logo">
                     <ul class="nav__links">
-                        <button onclick="openMenu()">☰</button>
-                            <div class="menu">
-                             <button onclick="closeMenu()">✕</button>
-                        <li class="nav__link--primary">
-                            <a href="#features">About</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav__link">
-                            <a href="#header">Contact Us</a>
-                        </li>
-                        <li class="nav__link--login">
-                            <a href="#header" target="_blank">Login</a>
-                        </li>
+                        <li class="nav__link--primary"><a href="#features">About</a></li>
+                        <li class="nav__link"><a href="#">Blog</a></li>
+                        <li class="nav__link"><a href="#pricing">Pricing</a></li>
+                        <li class="nav__link"><a href="#header">Contact Us</a></li>
+                        <li class="nav__link--login"><a href="#header">Login</a></li>
                         <li>
                             <button class="nav__link--btn">
-                                <a href="#header" target="_blank">Sign Up</a>
+                                <a href="#header">Sign Up</a>
                             </button>
-                        </div>
                         </li>
                     </ul>
+                 <button class="btn__menu" onclick="openMenu()">☰</button>
                 </div>
             </div>
         </nav>
+        <div class="menu">
+            <button onclick="closeMenu()">✕</button>
+            <a href="#features" onclick="closeMenu()">About</a>
+            <a href="#" onclick="closeMenu()">Blog</a>
+            <a href="#pricing" onclick="closeMenu()">Pricing</a>
+            <a href="#header" onclick="closeMenu()">Contact Us</a>
+            <a href="#header" onclick="closeMenu()">Login</a>
+        </div>
     </section>
     <header>
         <div class="header__container">
@@ -478,7 +473,6 @@
             </div>
         </section>
     </main>
-</body>
     <footer>
         <section id="footer">
             <div class="footer__container">
@@ -563,4 +557,6 @@
             </div>
         </section>
     </footer>
+<script src="./index.js"></script>
+</body>
 </html>

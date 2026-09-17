@@ -479,7 +479,7 @@ QUALITYWORK
 .quality-work__btn {
     align-self: flex-start;
     padding: 10px 25px;
-    background-color: #483190;
+    background-color: #6415ff;
     border-radius: 20px;
     font-weight: 600;
 }
@@ -748,7 +748,7 @@ VALUES
     display: flex;
     width: 140px;
     height: 40px;
-    background-color: #483190;
+    background-color: #6415ff;
     border-radius: 30px;
     text-decoration: none;
     justify-content: center;
@@ -1479,6 +1479,10 @@ FOOTER
   .btn__menu {
     display: block;
   }
+
+  .nav__links {
+    display: none;
+  }
 }
 
 
@@ -1513,6 +1517,14 @@ FOOTER
     .nav__link--btn {
         padding: 8px 14px;
     }
+
+    .btn__menu {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
 
     .header__row,
     .quality-work__row,
