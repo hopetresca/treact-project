@@ -1621,6 +1621,13 @@ FOOTER
         bottom: -18px;
     }
 
+    .steps__screenshot--img {
+        top: 14%;
+        left: 50%;
+        width: 100px;
+        height: 150px;
+    }
+
     .quality-work__btn {
         align-self: center;
     }
