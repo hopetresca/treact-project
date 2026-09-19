@@ -1497,7 +1497,7 @@ FOOTER
   
     .btn__menu {
     display: block;
-  }
+  } 
 
   .nav__links {
     display: none;
@@ -1611,8 +1611,8 @@ FOOTER
 
     .quality-work__corner--dots {
         width: 110px;
-        right: -5px;
-        bottom: -18px;
+        right: -35px;
+        bottom: -35px;
     }
 
     .quality-work__btn {
@@ -1662,13 +1662,20 @@ FOOTER
         display: block;
         width: 100%;
         height: auto;
+        padding-top: 25px;
     }
 
     .steps__screenshot--img {
-        top: 14%;
+        top: 52%;
         left: 50%;
-        width: 55%;
-        height: 146px;
+        width: 68%;
+        height: 125px;
+    }
+
+    .quality-work__corner--dots {
+        height: -5px;
+        right: -26px;
+        bottom: -23px;
     }
 
     .steps__header {
